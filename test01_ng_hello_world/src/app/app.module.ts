@@ -11,6 +11,7 @@ import { ItemDetailComponent } from './item/item-detail.component'
   imports: [NativeScriptModule, AppRoutingModule],
   declarations: [AppComponent, ItemsComponent, ItemDetailComponent],
   providers: [],
+  // this disables angular complaining that xml is not html.
   schemas: [NO_ERRORS_SCHEMA],
 })
 export class AppModule {}
