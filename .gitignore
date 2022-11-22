@@ -1,3 +1,8 @@
+# NativeScript
+hooks/
+node_modules/
+platforms/
+
 *~
 
 # vi has upto 3 temp files

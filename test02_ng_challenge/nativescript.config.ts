@@ -1,7 +1,7 @@
 import { NativeScriptConfig } from '@nativescript/core';
 
 export default {
-  id: 'org.nativescript.test01nghelloworld',
+  id: 'org.nativescript.test02ngchallenge',
   appPath: 'src',
   appResourcesPath: 'App_Resources',
   android: {

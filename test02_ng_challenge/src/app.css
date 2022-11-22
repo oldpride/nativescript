@@ -4,3 +4,31 @@
 Button.-primary {
   font-size: 18;
 }
+
+/* this can be overwriten by componenet level css */
+StackLayout {
+  border-color: green;
+  border-width: 8;
+}
+
+/* Button applies to all <Button>, .btn can selectively applies to class="btn" */
+.btn {
+  background: purple;
+  border-color: purple;
+  border-width: 1;
+  color: white;
+  width: 250;
+  padding: 5 10;
+  border-radius: 30%;
+}
+
+/* TextField applies to all <TextField>,
+.form-control can selectively applies to class="form-control"
+*/
+.form-control {
+  border-bottom-color: purple;
+  border-width: 2;
+  margin: 5 0;
+  font-size: 20;
+  padding: 8 4;
+}

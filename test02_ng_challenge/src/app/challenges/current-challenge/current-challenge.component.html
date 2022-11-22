@@ -1,0 +1,33 @@
+<StackLayout>
+    <TextField
+        hint="type my challenge"
+        [(ngModel)]="challengeDescription"
+        class="form-control"
+    >
+    </TextField>
+    <!-- ngModule is from app.module.ts -->
+
+    <Label text="my static text"></Label>
+    <!-- for static text, lower case label works too.-->
+
+    <Label [text]="challengeDescription"></Label>
+    <!--
+        [text] means dynamic text.
+        challengeDescription is from above <TextField>.
+        <label [text]="challengeDescription"></label> won't work.
+            ns uses Label, html uses label.
+            lowercase label won't work for dynamic text.
+    -->
+
+    <Button class="btn" (tap)="onSetChallenge()", text="Set Challenge">Set Challenge</Button>
+    <!--
+        [text] is property binding
+        (tap) is event binding
+    -->
+
+    <Label class="title" [text]="currentChallenge"></Label>
+    <!--
+        class="title" is used by css
+    -->
+
+</StackLayout>
