@@ -7,7 +7,7 @@
     </TextField>
     <!-- ngModule is from app.module.ts -->
 
-    <Label text="my static text"></Label>
+    <Label text="echo above text"></Label>
     <!-- for static text, lower case label works too.-->
 
     <Label [text]="challengeDescription"></Label>
@@ -19,7 +19,7 @@
             lowercase label won't work for dynamic text.
     -->
 
-    <Button class="btn" (tap)="onSetChallenge()", text="Set Challenge">Set Challenge</Button>
+    <Button class="btn" (tap)="onSetChallenge()", text="Click to print below">Click to display below</Button>
     <!--
         [text] is property binding
         (tap) is event binding
